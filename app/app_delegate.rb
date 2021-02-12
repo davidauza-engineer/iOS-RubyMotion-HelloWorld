@@ -1,6 +1,6 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
-    rootViewController = UIViewController.alloc.init
+    rootViewController = HelloWorldController.alloc.init
     rootViewController.title = 'HelloWorld'
     rootViewController.view.backgroundColor = UIColor.whiteColor
 
