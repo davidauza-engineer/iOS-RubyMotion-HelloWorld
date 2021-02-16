@@ -1,13 +1,27 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    SweetTea (0.0.6)
+      clamp (~> 0.3.1)
+      treetop
+    awesome_print_motion (0.1.0)
+    clamp (0.3.1)
+    polyglot (0.3.5)
     rake (13.0.1)
+    sugarcube (4.0.0)
+    teacup (3.0.1)
+    treetop (1.6.11)
+      polyglot (~> 0.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  SweetTea
+  awesome_print_motion
   rake
+  sugarcube
+  teacup
 
 BUNDLED WITH
    2.1.2
