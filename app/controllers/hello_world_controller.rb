@@ -1,5 +1,7 @@
 class HelloWorldController < UIViewController
-  def viewDidLoad
+  stylesheet :main
+
+  def layoutDidLoad
     p 'Hello World!'
 
     # Made better with Sugarcube
@@ -13,14 +15,9 @@ class HelloWorldController < UIViewController
     # see the magic of Awesome Print!
     ap @colors
 
-    center_x = view.frame.size.width / 2
-    center_y = view.frame.size.height / 2
+  end
 
-    @label = UILabel.alloc.init
-    @label.text = 'Hello World'
-    @label.sizeToFit
-    @label.center = [center_x, center_y]
-    
-    view.addSubview(@label)
+  def teacup_layout
+    @label = subview(UILabel, :hello_label)
   end
 end
